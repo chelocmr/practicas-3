@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de filas y columnas</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+    <body>
+        <nav class="navbar" style="background-color: yellow;">
+            <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">T.P. N°1</span>
+            </div>
+        </nav>
+        
+        <div class="container mt-3">
+
+
+            <div class="row"> 
+                
+                <div class="col-lg-6">
+                    <h2>Alta producto</h2>
+                    <div class="row">
+                    
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label class="form-label">Descripcion</label>
+                                <input class="form-control"type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label class="form-label">Detalle</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" value="25.5" aria-label="Amount (to the nearest dollar)">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" placeholder="Precio de venta" aria-label="Amount (to the nearest dollar)">
+                              
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">N°</span>
+                                <input type="number" class="form-control" placeholder="Stock" aria-label="Amount (to the nearest dollar)">
+                          
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Categoría...">
+                            <datalist id="datalistOptions">
+                                <option value="Gondola">
+                                <option value="Heladeras">
+                                <option value="Frizzer">
+                                <option value="Congelados">
+                                <option value="Lacteos">
+                            </datalist>
+        
+        
+                        </div>
+        
+        
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                    
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label class="form-label">Fecha de alta</label>
+                                <input class="form-control"type="date">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label class="form-label">Hora de alta</label>
+                                <input class="form-control"type="time">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+             
+
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <img src="https://www.kreatuweb.com/wp-content/uploads/2021/03/bootstrap.png" class="img-fluid" alt="bootstrap">
+                            </div>
+                        </div>
+        
+        
+                    </div>
+
+                    
+    
+                </div>
+                
+
+            </div>
+
+        </div>
+
+
+    
+
+        <div class="container mt-3">
+
+            <div class="row">
+                <form class="row g-3">
+                    <div class="col-auto">
+                      
+                    </div>
+                    <div class="col-auto">
+                     
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-3" style="background-color: green"; >Guardar producto</button>
+                    </div>
+                  </form>
+                
+            </div>
+        </div>
+
+
+ 
+    </body>
+</html>
