@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud - Localstorage </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0">Crud IPS</span>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+
+
+        <div class="row">
+
+            <div class="col-lg-4">
+                <form id="form_ip">
+                    <div class="mb-3">
+                        <label class="form-label">IP</label>
+                        <input id="inp_IP" class="form-control" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">puerto</label>
+                        <input id="inp_puerto" class="form-control" type="number">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">PaisCiudad</label>
+                        <input id="inp_PaisCiudad" class="form-control" type="text">
+                    </div>             
+                    <div class="mb-3">
+                        <label class="form-label">velocidad</label>
+                        <input id="inp_velocidad" class="form-control" type="number">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">tipo</label>
+                        <input id="inp_tipo" class="form-control" type="text">
+                    </div>
+                    <button type="button" onclick="guardar()" id="btn_guardar" class="btn btn-success">Guardar</button>
+                    <button type="button" style="display: none;" id="btn_actualizar" class="btn btn-primary">Actualizar</button>
+                </form>
+
+            </div>
+
+            <div class="col-lg-8">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>IP</th>
+                            <th>Puerto</th>
+                            <th>PaisCiudad</th>
+                            <th>Velocidad</th>
+                            <th>Tipo</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
